@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Howoldishill
+        psr4_prefix: Howoldishill
+        src_path: app
