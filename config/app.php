@@ -145,6 +145,10 @@ return [
         Howoldishill\Providers\EventServiceProvider::class,
         Howoldishill\Providers\RouteServiceProvider::class,
 
+        Barryvdh\Debugbar\ServiceProvider::class,
+
+        'Howoldishill\Providers\ComposerServiceProvider'
+
     ],
 
     /*
@@ -194,6 +198,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];
