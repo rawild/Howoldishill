@@ -4,7 +4,7 @@
 <div name='results'>
   {{$Result}}
 
-  @if($Result !== "Last question: You gotta brush up a bit.")
+  @if($Result != "Oops, you got the last one wrong.")
   <form method='POST' action="/question">
     <input type='hidden' name='_token' value='{{ csrf_token() }}'>
     <input type='hidden' name='game_id' value='{{ $game_id }}'>
@@ -14,7 +14,7 @@
   @endif
 
   @if($lifeline == 1)
-  <br>You get one retry. Do you want to use it?
+  <br>You get one retry per game. Do you want to use it?
   <form method='POST' action="/retry">
     <input type='hidden' name='_token' value='{{ csrf_token() }}'>
     <input type='hidden' name='game_id' value= '{{ $game_id }}'>

@@ -14,7 +14,9 @@ input {
 #answers {
   text-align: left;
 }
-
+#scoreform {
+  text-align: left;
+}
 .results {
   text-align: left;
   background: #d9d9e0;

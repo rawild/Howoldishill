@@ -76,7 +76,7 @@ class QuizController extends Controller {
       $Game_Answer->answer_id = $Answer->id;
       $Game_Answer->correct = $Answer->correct;
       $Game_Answer->save();
-      $Result = "You gotta brush up a bit.";
+      $Result = "Oooops! Looks like you gotta brush up a bit.";
       $lifeline = $Game_Answer->game->lifeline;
       if ($Game_Answer->correct == 1){
         $Result = "Congrats! You know the Hillz!";
@@ -86,8 +86,13 @@ class QuizController extends Controller {
 
       // are we at the end of the quiz?
       if ($question_index == count($game_answers)) {
-        $Result = "Last question: ".$Result;
-        if (($Game_Answer->correct == 1) || ($lifeline != 1)) {
+        if ($Game_Answer->correct == 1) { //Special results for last question
+          $Result = "You got the last one right.";
+        } else {
+          $Result = "Oops, you got the last one wrong.";
+        }
+        if (($Game_Answer->correct == 1) || ($lifeline != 1)) { //if question right or no lifeline goes to score page
+
           $Score = new \Howoldishill\Score();
           $Score->game_id = $request->game_id;
           $score = 0;
