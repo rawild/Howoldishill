@@ -23,9 +23,8 @@ class QuizController extends Controller {
       $Game->save();
       $game_id = $Game->id;
 
-      //Get a random order of questions
-      $question_ids = range(1,3);
-      shuffle($question_ids);
+      //questionids
+      $question_ids = range(1,10);
 
       $question_index = 0;
 
@@ -58,8 +57,6 @@ class QuizController extends Controller {
       $game_answers = \Howoldishill\GamesAnswer::with('question')->where('game_id','=',$request->game_id)->get();
       $question = $game_answers[$question_index]->question;
 
-
-
       return view('quiz.question')
         ->with(['question' => $question,
         'game_id' => $request->game_id,
@@ -70,8 +67,6 @@ class QuizController extends Controller {
     }
 
     public function postGuess(Request $request){
-
-
       $Answer = \Howoldishill\Answer::find($request->answer);
       $game_answers = \Howoldishill\GamesAnswer::with('answer')->with('game')->where('game_id','=',$request->game_id)->get();
       $question_index = $request->question_index;

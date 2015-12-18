@@ -5,7 +5,7 @@ body {
   padding-bottom: 50px;
 }
 input {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .widgets {
   min-width: 800px;
@@ -15,8 +15,12 @@ input {
   text-align: left;
 }
 #scoreform {
-  padding-top: 30px;
+  margin-top: 10px;
 }
+#scorebutton {
+  margin-top: 10px;
+}
+
 .scoreheader {
   text-align: left;
 }
@@ -25,4 +29,13 @@ input {
   background: #d9d9e0;
   border-radius: 10px;
   padding: 20px;
+}
+.panel {
+  margin-top: 25px;
+}
+img {
+  margin-top: 20px;
+}
+a {
+  margin-top: 10px;
 }

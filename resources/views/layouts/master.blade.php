@@ -14,30 +14,24 @@
   </head>
 
   <body>
-    <div class="container-fluid theme-showcase" role="main">
+  <div class="container-fluid theme-showcase" role="main">
+    <div class="row row-centered" >
 
-      <div class="row row-centered" >
-        <div class="col-md-3 col-md-offset-4 col-centered">
-          <header>
-
-            @yield('header')
-          </header>
-        </div>
+      <div class="col-md-3 col-md-offset-1">
+        <img alt="Hillz" src=/images/Hillz.jpg class="img-circle">
       </div>
-      <div class="row">
-        <div class="col-md-2 col-md-offset-1">
-          <img alt="Hillz" src=/images/Hillz.jpg class="img-circle">
-        </div>
-        <div class="col-md-6 col-md-offset-2">
-          <section class="contents">
-            @yield('contents')
-          </section>
-        </div>
+      <div class="col-md-6 col-md-offset-1" >
+        <section class="contents">
+          @yield('contents')
+        </section>
       </div>
-
-
       <footer>
+        @yield('footer')
       </footer>
+    </div>
+
+
+
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
       </script>

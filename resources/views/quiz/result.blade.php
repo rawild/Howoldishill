@@ -11,6 +11,7 @@
     <input type='hidden' name='question_index' value='{{ $question_index }}'>
     <input class="btn btn-success" type="submit" Name="Submit" value="Next Question">
   </form>
+  <br>
   @endif
 
   @if($lifeline == 1)
