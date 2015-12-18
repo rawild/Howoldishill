@@ -22,15 +22,4 @@ Route::post('/question','QuizController@postQuestion');
 Route::post('/retry','QuizController@postRetry');
 Route::post('/score','QuizController@postScore');
 
-
-if(App::environment('local')) {
-
-    Route::get('/drop', function() {
-
-        DB::statement('DROP database Howoldishill');
-        DB::statement('CREATE database  Howoldishill');
-
-        return 'Dropped database; created database';
-    });
-
 };
