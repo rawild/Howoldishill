@@ -57,6 +57,9 @@ class QuizController extends Controller {
       // what questions are associated with this game
       $game_answers = \Howoldishill\GamesAnswer::with('question')->where('game_id','=',$request->game_id)->get();
       $question = $game_answers[$question_index]->question;
+
+
+
       return view('quiz.question')
         ->with(['question' => $question,
         'game_id' => $request->game_id,

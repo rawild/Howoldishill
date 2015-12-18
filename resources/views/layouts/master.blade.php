@@ -28,7 +28,7 @@
         <div class="col-md-2 col-md-offset-1">
           <img alt="Hillz" src=/images/Hillz.jpg class="img-circle">
         </div>
-        <div class="col-md-4 col-md-offset-2">
+        <div class="col-md-6 col-md-offset-2">
           <section class="contents">
             @yield('contents')
           </section>

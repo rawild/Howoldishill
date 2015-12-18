@@ -13,10 +13,10 @@
         @endforeach
       </table>
   </div>
-</div>
-<div class="btn-group-vertical" role="group" aria-label="Where to?">
-    <a class="btn btn-default" role="button" href="http://p4.loc/start" >Play Again</a>
-    <a class="btn btn-default" role="button" href="http://p4.loc/" >Home</a>
 
+<div>
+    <a class="btn btn-primary btn-block" role="button" href="http://p4.loc/start" >Play Again</a>
+    <br>
+    <a class="btn btn-default" role="button" href="http://p4.loc/" >Home</a>
 </div>
 @stop

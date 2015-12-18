@@ -11,6 +11,13 @@ class AnswersTableSeeder extends Seeder
      */
     public function run()
     {
+      DB::table('answers')->insert([
+       'created_at' => Carbon\Carbon::now()->toDateTimeString(),
+       'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
+       'question_id' => '1',
+       'answer' => 'Dummy Answer',
+       'correct' => true
+      ]);
       $question_id = \Howoldishill\Question::where('question','=','How old is Hillary?')->pluck('id');
       DB::table('answers')->insert([
        'created_at' => Carbon\Carbon::now()->toDateTimeString(),

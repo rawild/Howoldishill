@@ -1,8 +1,8 @@
 body {
-  padding-top: 50px;
+  padding-top: 75px;
   margin: auto;
   text-align: center;
-  padding-bottom:50px;
+  padding-bottom: 50px;
 }
 input {
   margin-top: 20px;
@@ -15,6 +15,9 @@ input {
   text-align: left;
 }
 #scoreform {
+  padding-top: 30px;
+}
+.scoreheader {
   text-align: left;
 }
 .results {
