@@ -16,9 +16,9 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-3" >
       <div>
-        <a class="btn btn-primary btn-block" role="button" href="http://p4.loc/start" >Play Again</a>
+        <a class="btn btn-primary btn-block" role="button" href="http://p4.kygy.xyz/start" >Play Again</a>
         <br>
-        <a class="btn btn-default" role="button" href="http://p4.loc/" >Home</a>
+        <a class="btn btn-default" role="button" href="http://p4.kygy.xyz/" >Home</a>
       </div>
     </div>
   </div>

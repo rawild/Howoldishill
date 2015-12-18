@@ -32,10 +32,10 @@
   <br>
   <div class="row">
     <div class="col-md-6">
-      <a class="btn btn-primary btn-block" role="button" href="http://p4.loc/start" >Play Again</a>
+      <a class="btn btn-primary btn-block" role="button" href="http://p4.kygy.xyz/start" >Play Again</a>
     </div>
     <div class="col-md-6">
-      <a class="btn btn-default btn-block" role="button" href="http://p4.loc/" >Home</a>
+      <a class="btn btn-default btn-block" role="button" href="http://p4.kygy.xyz/" >Home</a>
     </div>
 
   </div>
