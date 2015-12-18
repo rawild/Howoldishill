@@ -21,5 +21,3 @@ Route::post('/guess','QuizController@postGuess');
 Route::post('/question','QuizController@postQuestion');
 Route::post('/retry','QuizController@postRetry');
 Route::post('/score','QuizController@postScore');
-
-};
